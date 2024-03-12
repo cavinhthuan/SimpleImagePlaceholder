@@ -6,7 +6,7 @@ simple API generate image holder with your custom for free
 
 ## API
 
-#### Get Image Placeholder
+### Get Image Placeholder
 
 ```http
   GET https://placeholder-seven.vercel.app/api?{parameters}
@@ -15,7 +15,7 @@ simple API generate image holder with your custom for free
 | Parameters | Type | Description | Default |
 | :-------- | :------- | :------------------------- | :- |
 | `width` | `string` | image width to generate |100|
-| `height` | `string` | image width to generate |100|
+| `height` | `string` | image height to generate |100|
 | `text` | `string` | Your display text |`"Image"`|
 | `backgroundColor` | `string` | background image use RBG encoded | <span style="background-color:#dde3e9; color:black; border-radius:2px; padding:2px;">#dde3e9</span>|
 | `textColor` | `string` | text color image use RBG encoded |<span style="background-color:#eff1f3; color:black; border-radius:2px; padding:2px;">#eff1f3</span>|
@@ -46,3 +46,12 @@ fetch("https://placeholder-seven.vercel.app/api?text=Image Placeholder API&width
   .then((result) => console.log(result))
   .catch((error) => console.error(error));
 ```
+### Full Use Example
+#### request url
+```url
+https://placeholder-seven.vercel.app/api?text=400x600&width=400&height=600&fontSize=1000pt&textColor=%230765ff&backgroundColor=white
+```
+#### result
+![App Screenshot](https://placeholder-seven.vercel.app/api?text=400x600&width=400&height=600&fontSize=1000pt&textColor=%230765ff&backgroundColor=red)
+
+
